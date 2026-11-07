@@ -6,12 +6,12 @@ import { Container } from '../ui/Container'
 import { BrandIcon, type BrandName } from '../ui/BrandIcon'
 
 const quickLinks = [
-  { to: '/about', label: 'About' },
+  { to: '/#about', label: 'About' },
   { to: '/projects', label: 'Projects' },
   { to: '/#experience', label: 'Experience' },
-  { to: '/testimonials', label: 'Testimonials' },
+  { to: '/#testimonials', label: 'Testimonials' },
   { to: '/freelance', label: 'Freelance' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/#contact', label: 'Contact' },
 ]
 
 export function Footer() {
@@ -21,9 +21,19 @@ export function Footer() {
         <div className="grid gap-10 pb-16 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <span className="border-gradient inline-block rounded-full px-4 py-1.5 font-serif text-lg italic">
-              <span className="text-gradient font-bold not-italic">{profile.brand}</span>
-            </span>
+            <Link
+              to="/"
+              aria-label={`${profile.brand} — home`}
+              className="group inline-block rounded-full p-[2px] shadow-[0_6px_22px_-6px_rgba(167,139,250,0.85)] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] [background:var(--signature-gradient)] hover:-translate-y-0.5"
+            >
+              <img
+                src={profile.heroPortrait}
+                alt={profile.fullName}
+                width={56}
+                height={56}
+                className="block h-14 w-14 rounded-full border-2 border-white object-cover object-top"
+              />
+            </Link>
             <p className="text-text-muted mt-4 max-w-xs text-sm">{profile.tagline}</p>
             <div className="mt-5 flex gap-3">
               {socials.map((s) => (

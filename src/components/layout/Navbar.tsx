@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'motion/react'
-import { Menu } from 'lucide-react'
+import { Download, Menu } from 'lucide-react'
 import { navItems, profile } from '../../data/profile'
 import { useActiveSection } from '../../hooks/useActiveSection'
-import { ButtonRouterLink } from '../ui/Button'
+import { ButtonLink, ButtonRouterLink } from '../ui/Button'
 import { MobileMenu } from './MobileMenu'
 import { cn } from '../../lib/cn'
 
@@ -33,9 +33,9 @@ export function Navbar() {
       <header
         className={cn(
           'pointer-events-none inset-x-0 top-0 z-50 px-4 pt-3 sm:px-6 lg:px-10 lg:pt-5 xl:px-16',
-          // On the freelance page the bar scrolls away with the content;
-          // everywhere else it stays pinned to the viewport.
-          onFreelance ? 'absolute' : 'fixed',
+          // On the home and freelance pages the bar scrolls away with the
+          // content; on the other routes it stays pinned to the viewport.
+          onHome || onFreelance ? 'absolute' : 'fixed',
         )}
       >
         <div
@@ -84,6 +84,15 @@ export function Navbar() {
 
           {/* CTA + mobile toggle */}
           <div className="flex shrink-0 items-center gap-2">
+            <ButtonLink
+              href={profile.resumeUrl}
+              download
+              variant="glass"
+              aria-label="Download résumé (PDF)"
+              className="hidden px-4 py-2.5 md:inline-flex"
+            >
+              <Download size={16} aria-hidden /> Resume
+            </ButtonLink>
             <ButtonRouterLink
               to="/freelance"
               arrow

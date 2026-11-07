@@ -45,7 +45,7 @@ export function Experience() {
             rel="noreferrer noopener"
             className="mt-7"
           >
-            <Download size={16} aria-hidden /> Download résumé
+            <Download size={16} aria-hidden /> Download Resume
           </ButtonLink>
         </Reveal>
 

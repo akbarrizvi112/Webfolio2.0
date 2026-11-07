@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { AnimatePresence, motion } from 'motion/react'
-import { X } from 'lucide-react'
+import { Download, X } from 'lucide-react'
 import { navItems, profile, socials } from '../../data/profile'
-import { ButtonRouterLink } from '../ui/Button'
+import { ButtonLink, ButtonRouterLink } from '../ui/Button'
 import { EASE_BRAND } from '../../lib/motion'
 import { cn } from '../../lib/cn'
 
@@ -110,6 +110,15 @@ export function MobileMenu({
             <ButtonRouterLink to="/freelance" onClick={onClose} arrow className="w-full">
               Let&apos;s Collaborate
             </ButtonRouterLink>
+            <ButtonLink
+              href={profile.resumeUrl}
+              download
+              onClick={onClose}
+              variant="glass"
+              className="w-full"
+            >
+              <Download size={16} aria-hidden /> Download Resume
+            </ButtonLink>
             <div className="flex gap-4">
               {socials.map((s) => (
                 <a

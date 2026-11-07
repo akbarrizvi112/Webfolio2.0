@@ -49,6 +49,7 @@ export function AboutPage() {
                 </ButtonRouterLink>
                 <a
                   href={profile.resumeUrl}
+                  download
                   className="text-text-dark border-text-dark/15 inline-flex items-center rounded-full border px-6 py-3 text-sm font-semibold transition-colors hover:bg-black/[0.03]"
                 >
                   Download résumé

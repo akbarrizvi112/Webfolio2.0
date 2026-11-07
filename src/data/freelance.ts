@@ -115,7 +115,7 @@ export interface Gig {
 /* ------------------------------------------------------------- Fiverr --- */
 
 export const fiverr = {
-  profileUrl: 'https://www.fiverr.com/akbarrizvi',
+  profileUrl: 'https://www.fiverr.com/akbarrizvi570',
   handle: '@akbarrizvi',
 } as const
 
@@ -210,7 +210,7 @@ export const gigs: readonly Gig[] = [
     description:
       'I will build a modern, responsive full-stack web application using React, Next.js, Node.js or NestJS. Get clean architecture, secure APIs, database integration, authentication and scalable application development tailored to your business.',
     url:
-      'https://www.fiverr.com/akbarrizvi/build-a-full-stack-web-application-using-react-and-nodejs',
+      'https://www.fiverr.com/akbarrizvi570/build-a-full-stack-web-application-using-react-and-nodejs',
   },
 
   {
@@ -231,7 +231,7 @@ export const gigs: readonly Gig[] = [
     description:
       'I will develop custom gym management software and fitness booking platforms with membership management, trainer profiles, class scheduling, online bookings, payments and administration dashboards.',
     url:
-      'https://www.fiverr.com/akbarrizvi/setup-gym-management-software-and-fitness-booking-system',
+      'https://www.fiverr.com/akbarrizvi570/setup-gym-management-software-and-fitness-booking-system',
   },
 
   {
@@ -252,7 +252,7 @@ export const gigs: readonly Gig[] = [
     ],
     description:
       'I will build scalable SaaS applications with multi-tenant architecture, organization management, role-based access control, subscription billing, secure APIs and real-time analytics dashboards using Next.js, NestJS and PostgreSQL.',
-    url: 'https://www.fiverr.com/akbarrizvi',
+    url: 'https://www.fiverr.com/akbarrizvi570',
   },
 
   {
@@ -272,7 +272,7 @@ export const gigs: readonly Gig[] = [
     ],
     description:
       'I will develop intelligent AI chatbots, RAG assistants and agentic AI workflows using Python, LangChain, LangGraph, LLMs and vector databases. Integrate document Q&A, knowledge retrieval and AI automation directly into your application.',
-    url: 'https://www.fiverr.com/akbarrizvi',
+    url: 'https://www.fiverr.com/akbarrizvi570',
   },
 
   {
@@ -293,7 +293,7 @@ export const gigs: readonly Gig[] = [
     ],
     description:
       'I will create a premium, responsive landing page using React, Next.js and Tailwind CSS. Get modern UI, smooth animations, SEO optimization, fast loading and conversion-focused sections tailored to your business.',
-    url: 'https://www.fiverr.com/akbarrizvi',
+    url: 'https://www.fiverr.com/akbarrizvi570',
   },
 ]
 
